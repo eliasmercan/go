@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	//Declaración de constantes
@@ -45,7 +48,42 @@ func main() {
 	result = x * y
 	fmt.Println("Multiplicación: ", result)
 
-	//multiplicacion
+	//Division
 	result = y / x
 	fmt.Println("División: ", result)
+
+	//Modulo
+	result = y % x
+	fmt.Println("Modulo: ", result)
+
+	//Incremental
+	x++
+	fmt.Println("Incremental: ", x)
+
+	//Decremental
+	x--
+	fmt.Println("Deceremental: ", x)
+
+	// Recto calculo rectangulo, trapecio y de un circulo
+
+	//Area rectangulo
+	largo := 20
+	ancho := 30
+
+	areaRectangulo := largo * ancho
+	fmt.Println("Area rectangulo: ", areaRectangulo)
+
+	// Area trapecio
+
+	base2 := 30
+
+	areaTrapecio := ((base + base2) * altura) / 2
+	fmt.Println("Area Trapecio: ", areaTrapecio)
+
+	// Area Circulo
+
+	var radio float64 = 30
+
+	areaCirculo := (radio * radio) * math.Pi
+	fmt.Println("Area Circulo: ", areaCirculo)
 }

@@ -5,6 +5,22 @@ import (
 	"math"
 )
 
+func normalFunction(message string) {
+	fmt.Println(message)
+}
+
+func tripleArgument(a int, b int, c string) {
+	fmt.Println(a, b, c)
+}
+
+func returValue(a int) int {
+	return a * 2
+}
+
+func dobleReturn(a int) (c, d int) {
+	return a, a * 2
+}
+
 func main() {
 	//Declaración de constantes
 	const pi float64 = 3.14
@@ -86,4 +102,29 @@ func main() {
 
 	areaCirculo := (radio * radio) * math.Pi
 	fmt.Println("Area Circulo: ", areaCirculo)
+
+	//Uso de la función PrintF
+	nombre := "Platzi"
+	cursos := 500
+	fmt.Printf("%s tiene más de %d cursos\n", nombre, cursos)
+	//la directriz %v imprime por consola una variable si se desconoce el tipo de datos
+	fmt.Printf("%v tiene más de %v cursos\n", nombre, cursos)
+
+	//Uso de la función Sprintf
+	message := fmt.Sprintf("%s tiene mas de un %d cursos", nombre, cursos)
+	fmt.Println(message)
+
+	//Tipo de datos para saber cual es el tipo de datos con %T
+	fmt.Printf("message: %T\n", message)
+	fmt.Printf("areaTrapecio: %T\n", areaTrapecio)
+
+	//Funciones anonimas
+	fmt.Println("--------Funciones anonimas--------")
+	normalFunction("Hola Mundo")
+	tripleArgument(1, 2, "hola")
+	value := returValue(2)
+	fmt.Println("value: ", value)
+
+	value1, value2 := dobleReturn(2)
+	fmt.Println("Doble retorno value: ", value1, value2)
 }

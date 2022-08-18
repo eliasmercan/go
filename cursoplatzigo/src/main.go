@@ -130,7 +130,30 @@ func main() {
 
 	//Ciclo For
 	fmt.Println("--------Ciclo For--------")
-	for i := 0; i<=10; i++ {
+	for i := 0; i <= 10; i++ {
 		fmt.Println(i)
 	}
+
+	//For While
+	fmt.Println("--------For While--------")
+	counter := 0
+	for counter < 10 {
+		fmt.Println(counter)
+		counter++
+	}
+
+	//For Forever
+	fmt.Println("--------For forever comentado--------")
+	// counterForever := 0
+	// for {
+	// 	fmt.Println(counterForever)
+	// 	counterForever++
+	// }
+
+	//Ciclo For
+	fmt.Println("--------Reto Ciclo For (decremento)--------")
+	for rr := 10; rr >= 1; rr-- {
+		fmt.Println(rr)
+	}
+
 }

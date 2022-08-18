@@ -127,4 +127,10 @@ func main() {
 
 	value1, value2 := dobleReturn(2)
 	fmt.Println("Doble retorno value: ", value1, value2)
+
+	//Ciclo For
+	fmt.Println("--------Ciclo For--------")
+	for i:=0; i<=0; i++{
+		fmt.Println(i)
+	}
 }

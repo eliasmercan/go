@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math"
+	"strconv"
 )
 
 func normalFunction(message string) {
@@ -156,4 +158,28 @@ func main() {
 		fmt.Println(rr)
 	}
 
+	//Trabajando con IF
+	fmt.Println("--------Trabajando con IF--------")
+	valor1 := 1
+	valor2 := 2
+
+	if valor1 == 1 {
+		fmt.Println("Es 1")
+	} else {
+		fmt.Println("No es 1")
+	}
+
+	// Witn and
+	if valor1 == 1 && valor2 == 2 {
+		fmt.Println("Es verdad")
+	}
+
+	//Convertir texto a numero STRCONV.ATOI
+	value, err := strconv.Atoi("53cvxbxcvxcvb")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Value: ", value)
+
+	//uso de palabras claves: defer, break, continue
 }

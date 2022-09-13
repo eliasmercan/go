@@ -1,0 +1,30 @@
+{{ define "inicio" }}
+{{ template "cabecera" }}
+    <a name="" id="" class="btn btn-primary" href="/crear" role="button">+ Nuevo</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Elias Mercado</td>
+                <td>eliasmercan@msn.com</td>
+                <td>Editar | Borrar</td>
+            </tr>
+            <tr>
+                <td scope="row"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+{{ template "pie"}}
+{{end}}

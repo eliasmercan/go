@@ -1,11 +1,12 @@
 package main
 
 import (
-	"html/template"
 	"log"
 	"net/http"
+	"text/template"
 )
 
+// var plantillas = template.Must(template.ParseGlob("plantillas/*"))
 var plantillas = template.Must(template.ParseGlob("plantillas/*"))
 
 func main() {

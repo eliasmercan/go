@@ -1,9 +1,9 @@
 package main
 
 import (
+	"html/template"
 	"log"
-	"net/http"
-	"text/template"
+	"net/htitp"
 )
 
 var plantillas = template.Must(template.ParseGlob("plantillas/*"))
@@ -12,7 +12,7 @@ func main() {
 	http.HandleFunc("/", Inicio)
 	http.HandleFunc("/crear", Crear)
 
-	log.Println("servidor corriendo...")
+	log.Println("Servidor corriendo...")
 	http.ListenAndServe(":8080", nil)
 }
 

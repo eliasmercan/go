@@ -3,7 +3,7 @@ package main
 import (
 	"html/template"
 	"log"
-	"net/htitp"
+	"net/http"
 )
 
 var plantillas = template.Must(template.ParseGlob("plantillas/*"))

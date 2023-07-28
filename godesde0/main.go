@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/godesde0/ejercicios"
+	"github.com/godesde0/iteraciones"
 	"github.com/godesde0/teclado"
 	"github.com/godesde0/variables"
 )
@@ -44,4 +45,7 @@ func main() {
 
 	fmt.Println("---------TECLADO------")
 	teclado.IngresoNumeros()
+
+	iteraciones.Iterar()
+	ejercicios.TablaMultiplicar()
 }

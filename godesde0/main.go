@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/godesde0/arreglos_slices"
 	"github.com/godesde0/ejercicios"
 	"github.com/godesde0/files"
 	"github.com/godesde0/funciones"
@@ -69,4 +70,8 @@ func main() {
 
 	fmt.Println("---------FUNCIONES EXPONENCIA------")
 	funciones.Exponencia(2)
+
+	fmt.Println("---------ARREGLOS------")
+	arreglos_slices.MuestroArreglos()
+
 }

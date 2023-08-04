@@ -6,6 +6,7 @@ import (
 
 	"github.com/godesde0/ejercicios"
 	"github.com/godesde0/files"
+	"github.com/godesde0/funciones"
 	"github.com/godesde0/iteraciones"
 	"github.com/godesde0/teclado"
 	"github.com/godesde0/variables"
@@ -59,4 +60,10 @@ func main() {
 
 	fmt.Println("---------LEO ARCHIVO------")
 	files.LeoArchivo()
+
+	fmt.Println("---------FUNCIONES ANONIMAS------")
+	funciones.Calculos()
+
+	fmt.Println("---------FUNCIONES CLOSURE------")
+	funciones.LLamarClosure()
 }

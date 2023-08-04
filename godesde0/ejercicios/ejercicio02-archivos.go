@@ -7,16 +7,17 @@ import (
 	"strconv"
 )
 
-var numero1 int
-var variable int
-var err error
+var numero int
+var val int
+var errr error
+var texto string
 
-func TablaMultiplicar() {
+func TabladeMultiplicar() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
 		fmt.Println("Ingrese número para generar tabla de multiplicar")
 		if scanner.Scan() {
-			numero1, err = strconv.Atoi(scanner.Text())
+			numero, errr = strconv.Atoi(scanner.Text())
 			if err != nil {
 				// panic("Error al ingresar el registro ")
 				continue
@@ -25,10 +26,12 @@ func TablaMultiplicar() {
 			}
 		}
 	}
-	fmt.Println("-----Imprimiendo la tabla del ", numero1)
+	fmt.Println("-----Imprimiendo la tabla del ", numero)
 	for i := 1; i <= 10; i++ {
-		variable = i * numero1
-		fmt.Printf("%d X %d = %d\n", numero1, i, variable)
+		val = i * numero
+		texto += fmt.Sprintf("%d X %d = %d\n", numero, i, val)
 	}
+
+	return texto
 
 }

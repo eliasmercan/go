@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/godesde0/ejercicios"
+	"github.com/godesde0/files"
 	"github.com/godesde0/iteraciones"
 	"github.com/godesde0/teclado"
 	"github.com/godesde0/variables"
@@ -48,4 +49,14 @@ func main() {
 
 	iteraciones.Iterar()
 	ejercicios.TablaMultiplicar()
+
+	fmt.Println("---------TABLA DE MULTIPLICAR POR ARCHIVO------")
+	fmt.Println(ejercicios.TabladeMultiplicar())
+
+	fmt.Println("---------GRABANDO ARCHIVO EN FILES------")
+	// files.GrabaTabla()
+	files.SumaTabla()
+
+	fmt.Println("---------LEO ARCHIVO------")
+	files.LeoArchivo()
 }

@@ -66,4 +66,7 @@ func main() {
 
 	fmt.Println("---------FUNCIONES CLOSURE------")
 	funciones.LLamarClosure()
+
+	fmt.Println("---------FUNCIONES EXPONENCIA------")
+	funciones.Exponencia(2)
 }
